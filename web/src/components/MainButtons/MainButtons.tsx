@@ -6,10 +6,11 @@ import ActiveJobs from 'public/svgs/jobs-active.svg'
 import Jobs from 'public/svgs/jobs.svg'
 import ActiveMessage from 'public/svgs/message-active.svg'
 import Msg from 'public/svgs/msg.svg'
-import Network from 'public/svgs/network.svg'
 import Notif from 'public/svgs/notif.svg'
 
 import { Link } from '@redwoodjs/router'
+
+import Network from 'src/svgs/Network'
 
 const MainButtons = () => {
   const home = true
@@ -34,12 +35,7 @@ const MainButtons = () => {
 
       <Link to={'/network'}>
         <div className="nav-btn">
-          <img
-            src={Network}
-            alt=""
-            // className={`"nav-btn-icn" ${network && 'network-active'}`}
-            className={`nav-btn-icn`}
-          />
+          <Network fill={'rgba(0, 0, 0, 0.6)'} />
           <p>My Network</p>
           <span className={`nav-target-icn ${network && 'nav-active'}`}></span>
         </div>
