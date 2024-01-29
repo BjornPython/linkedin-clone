@@ -1,3 +1,5 @@
+import Search from 'src/components/Search/Search'
+
 type NavbarLayoutProps = {
   children?: React.ReactNode
 }
@@ -7,8 +9,8 @@ const NavbarLayout = ({ children }: NavbarLayoutProps) => {
     <div>
       <div className="navbar">
         <div className="nav-contents">
-          {/* <Search />
-          <MainButtons /> */}
+          <Search />
+          {/*    <MainButtons /> */}
         </div>
       </div>
       {children}
