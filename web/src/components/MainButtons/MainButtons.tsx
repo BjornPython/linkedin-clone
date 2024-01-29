@@ -2,14 +2,14 @@ import myDp from 'public/images/dp.jpg'
 import Dots from 'public/svgs/dots.svg'
 import Home from 'public/svgs/home.svg'
 import InactiveHome from 'public/svgs/in-home.svg'
-import ActiveJobs from 'public/svgs/jobs-active.svg'
-import Jobs from 'public/svgs/jobs.svg'
 import ActiveMessage from 'public/svgs/message-active.svg'
 import Msg from 'public/svgs/msg.svg'
 import Notif from 'public/svgs/notif.svg'
 
 import { Link } from '@redwoodjs/router'
 
+import ActiveJobs from 'src/svgs/ActiveJobs'
+import Jobs from 'src/svgs/Jobs'
 import Network from 'src/svgs/Network'
 
 const MainButtons = () => {
@@ -35,7 +35,7 @@ const MainButtons = () => {
 
       <Link to={'/network'}>
         <div className="nav-btn">
-          <Network fill={'rgba(0, 0, 0, 0.6)'} />
+          <Network />
           <p>My Network</p>
           <span className={`nav-target-icn ${network && 'nav-active'}`}></span>
         </div>
@@ -43,13 +43,9 @@ const MainButtons = () => {
 
       <Link to={'/jobs'}>
         <div className="nav-btn">
-          {jobs ? (
-            <img src={ActiveJobs} alt="" className="nav-btn-icn" />
-          ) : (
-            <img src={Jobs} alt="" className="nav-btn-icn" />
-          )}
+          {jobs ? <ActiveJobs /> : <Jobs />}
           <p>Jobs</p>
-          <span className={`nav-target-icn ${jobs && 'nav-active'}`}></span>
+          <span className={`nav-target-icn  ${jobs && 'nav-active'}`}></span>
         </div>
       </Link>
 
