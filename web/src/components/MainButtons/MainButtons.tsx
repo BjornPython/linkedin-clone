@@ -2,22 +2,22 @@ import myDp from 'public/images/dp.jpg'
 import Dots from 'public/svgs/dots.svg'
 import Home from 'public/svgs/home.svg'
 import InactiveHome from 'public/svgs/in-home.svg'
-import ActiveMessage from 'public/svgs/message-active.svg'
-import Notif from 'public/svgs/notif.svg'
 
 import { Link } from '@redwoodjs/router'
 
 import ActiveJobs from 'src/svgs/ActiveJobs'
+import ActiveMessage from 'src/svgs/ActiveMessage'
 import Jobs from 'src/svgs/Jobs'
 import Msg from 'src/svgs/Msg'
 import Network from 'src/svgs/Network'
+import Notif from 'src/svgs/Notif'
 
 const MainButtons = () => {
   const home = true
   const network = false
   const jobs = false
   const messages = false
-  const notifications = true
+  const notifications = false
 
   return (
     <div className="main-btns">
@@ -35,7 +35,7 @@ const MainButtons = () => {
 
       <Link to={'/network'}>
         <div className="nav-btn">
-          <Network />
+          {network ? <Network fill={'black'} /> : <Network />}
           <p>My Network</p>
           <span className={`nav-target-icn ${network && 'nav-active'}`}></span>
         </div>
@@ -51,11 +51,7 @@ const MainButtons = () => {
 
       <Link to={'/messages'}>
         <div className="nav-btn">
-          {messages ? (
-            <img src={ActiveMessage} alt="" className="nav-btn-icn" />
-          ) : (
-            <Msg />
-          )}
+          {messages ? <ActiveMessage fill={'black'} /> : <Msg />}
           <p>Messaging</p>
           <span className={`nav-target-icn ${messages && 'nav-active'}`}></span>
         </div>
@@ -63,11 +59,7 @@ const MainButtons = () => {
 
       <Link to={'/notifications'}>
         <div className="nav-btn">
-          <img
-            src={Notif}
-            alt=""
-            className={`"nav-btn-icn" ${notifications && 'active-notifs'}`}
-          />
+          {notifications ? <Notif fill={'black'} /> : <Notif />}
 
           <p>Notifications</p>
           <span
