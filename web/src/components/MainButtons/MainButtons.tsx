@@ -3,13 +3,13 @@ import Dots from 'public/svgs/dots.svg'
 import Home from 'public/svgs/home.svg'
 import InactiveHome from 'public/svgs/in-home.svg'
 import ActiveMessage from 'public/svgs/message-active.svg'
-import Msg from 'public/svgs/msg.svg'
 import Notif from 'public/svgs/notif.svg'
 
 import { Link } from '@redwoodjs/router'
 
 import ActiveJobs from 'src/svgs/ActiveJobs'
 import Jobs from 'src/svgs/Jobs'
+import Msg from 'src/svgs/Msg'
 import Network from 'src/svgs/Network'
 
 const MainButtons = () => {
@@ -54,7 +54,7 @@ const MainButtons = () => {
           {messages ? (
             <img src={ActiveMessage} alt="" className="nav-btn-icn" />
           ) : (
-            <img src={Msg} alt="" className="nav-btn-icn" />
+            <Msg />
           )}
           <p>Messaging</p>
           <span className={`nav-target-icn ${messages && 'nav-active'}`}></span>
