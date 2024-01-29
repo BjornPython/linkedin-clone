@@ -140,7 +140,8 @@ animation: gradient 2s ease infinite;
 
 .nav-btn-icn {
   margin-bottom: 2px;
-  fill: rgba(0, 0, 0, 0.6);
+  fill: rgba(0, 0, 0, 0.6) !important;
+  color: rgba(0, 0, 0, 0.6) !important;
   width: 24px;
   height: 24px;
   border-radius: 50%;

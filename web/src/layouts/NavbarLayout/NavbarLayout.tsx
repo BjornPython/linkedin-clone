@@ -1,3 +1,4 @@
+import MainButtons from 'src/components/MainButtons/MainButtons'
 import Search from 'src/components/Search/Search'
 
 type NavbarLayoutProps = {
@@ -10,7 +11,7 @@ const NavbarLayout = ({ children }: NavbarLayoutProps) => {
       <div className="navbar">
         <div className="nav-contents">
           <Search />
-          {/*    <MainButtons /> */}
+          <MainButtons />
         </div>
       </div>
       {children}
