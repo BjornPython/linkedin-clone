@@ -1,12 +1,17 @@
 import InfoLeft from 'src/components/InfoLeft/InfoLeft'
+import Post from 'src/components/Post/Post'
+import { postIds } from 'src/lib/data'
 
 const HomePage = () => {
   return (
     <div className="homepage">
       <div className="newsfeed">
         <InfoLeft />
-
-        {/* <Posts postIds={postIds} ENDPOINT={process.env.API_ENDPOINT} /> */}
+        <div>
+          {postIds.map((postId) => {
+            return <Post key={postId} postId={postId} />
+          })}
+        </div>
       </div>
     </div>
   )
