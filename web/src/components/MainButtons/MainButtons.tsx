@@ -3,7 +3,7 @@ import Dots from 'public/svgs/dots.svg'
 import Home from 'public/svgs/home.svg'
 import InactiveHome from 'public/svgs/in-home.svg'
 
-import { Link } from '@redwoodjs/router'
+import { NavLink } from '@redwoodjs/router'
 
 import ActiveJobs from 'src/svgs/ActiveJobs'
 import ActiveMessage from 'src/svgs/ActiveMessage'
@@ -14,14 +14,13 @@ import Notif from 'src/svgs/Notif'
 
 const MainButtons = () => {
   const home = false
-  const network = false
   const jobs = false
   const messages = false
-  const notifications = true
+  const notifications = false
 
   return (
     <div className="main-btns">
-      <Link to={'/'}>
+      <NavLink to={'/'} activeClassName="nav-btn-active">
         <div className="nav-btn">
           {home ? (
             <img src={Home} alt="" className="nav-btn-icn" />
@@ -31,34 +30,33 @@ const MainButtons = () => {
           <p>Home</p>
           <span className={`nav-target-icn ${home && 'nav-active'}`}></span>
         </div>
-      </Link>
+      </NavLink>
 
-      <Link to={'/network'}>
-        <div className={`nav-btn ${network && 'nav-btn-active'}`}>
+      <NavLink to={'/network'} activeClassName="nav-btn-active">
+        <div className="nav-btn">
           <Network />
-          {/* {network ? <Network fill={'black'} /> : <Network />} */}
           <p>My Network</p>
-          <span className={`nav-target-icn ${network && 'nav-active'}`}></span>
+          <span className={`nav-target-icn`}></span>
         </div>
-      </Link>
+      </NavLink>
 
-      <Link to={'/jobs'}>
+      <NavLink to={'/jobs'} activeClassName="nav-btn-active">
         <div className="nav-btn">
           {jobs ? <ActiveJobs /> : <Jobs />}
           <p>Jobs</p>
           <span className={`nav-target-icn  ${jobs && 'nav-active'}`}></span>
         </div>
-      </Link>
+      </NavLink>
 
-      <Link to={'/messages'}>
+      <NavLink to={'/messages'} activeClassName="nav-btn-active">
         <div className="nav-btn">
           {messages ? <ActiveMessage fill={'black'} /> : <Msg />}
           <p>Messaging</p>
           <span className={`nav-target-icn ${messages && 'nav-active'}`}></span>
         </div>
-      </Link>
+      </NavLink>
 
-      <Link to={'/notifications'}>
+      <NavLink to={'/notifications'} activeClassName="nav-btn-active">
         <div className="nav-btn">
           <Notif fill={notifications && 'black'} />
 
@@ -67,7 +65,7 @@ const MainButtons = () => {
             className={`nav-target-icn ${notifications && 'nav-active'}`}
           ></span>
         </div>
-      </Link>
+      </NavLink>
 
       <div
         className="nav-btn"

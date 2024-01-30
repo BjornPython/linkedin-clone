@@ -122,17 +122,20 @@ animation: gradient 2s ease infinite;
   position: relative;
 }
 
-.nav-btn-active {
-  color: black;
+.nav-btn-active .nav-btn {
+  color: black !important;
 }
 
 .nav-btn:hover {
   color: black;
 }
 
-.nav-btn:hover .nav-btn-icn {
-  fill: black;
+.nav-btn-active span {
+  width: 100%;
+  transition: width 0.4s ease-in-out;
 }
+
+
 
 
 
