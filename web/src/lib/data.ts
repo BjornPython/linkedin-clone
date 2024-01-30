@@ -81,3 +81,9 @@ export const postsInfo = {
 }
 
 export const postIds = ['postId1', 'postId2', 'postId3', 'postId4']
+
+export const userSuggestions = {
+  user4: { ...usersInfo['user4'] },
+  user5: { ...usersInfo['user5'] },
+  user6: { ...usersInfo['user6'] },
+}
