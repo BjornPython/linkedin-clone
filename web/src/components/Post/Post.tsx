@@ -1,5 +1,9 @@
 import { postsInfo, usersInfo } from 'src/lib/data'
 import Circle from 'src/svgs/Circle'
+import Comment from 'src/svgs/Comment'
+import Like from 'src/svgs/Like'
+import Repost from 'src/svgs/Repost'
+import Send from 'src/svgs/Send'
 
 const Post = ({ postId }) => {
   const postInfo = postsInfo[postId]
@@ -30,7 +34,31 @@ const Post = ({ postId }) => {
         <p>{caption}</p>
       </div>
       <img src={imageURL} className="post-img" alt="" />
-      {/* <PostActions /> */}
+      <div className="post-actions-container">
+        <div className="action-btn">
+          <div className="action-icn">
+            <Like />
+          </div>
+          <p>Like</p>
+        </div>
+        <div className="action-btn">
+          <div className="action-icn">
+            <Comment />
+          </div>
+          <p>Comment</p>
+        </div>
+        <div className="action-btn">
+          <div className="action-icn">
+            <Repost />
+          </div>
+
+          <p>Repost</p>
+        </div>
+        <div className="action-btn">
+          <Send />
+          <p>Send</p>
+        </div>
+      </div>
     </div>
   )
 }
