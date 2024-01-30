@@ -258,3 +258,381 @@ animation: gradient 2s ease infinite;
       justify-content: flex-start;
   }
 }
+
+/* HOMEPAGE CSS */
+/* HOMEPAGE CSS */
+/* HOMEPAGE CSS */
+/* HOMEPAGE CSS */
+/* HOMEPAGE CSS */
+/* HOMEPAGE CSS */
+
+
+.homepage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.newsfeed {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 25px;
+  column-gap: 20px;
+}
+
+@media (max-width: 1300px) {
+  .newsfeed {
+    width: 95%;
+  }
+
+}
+
+@media (max-width: 770px) {
+  .newsfeed {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+
+
+/* INFO LEFT CSS */
+/* INFO LEFT CSS */
+/* INFO LEFT CSS */
+/* INFO LEFT CSS */
+/* INFO LEFT CSS */
+
+.infoLeftContainer {
+  width: 225px;
+  height: auto;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.leftProfileContainer {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+}
+
+.userBanner {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+@media (max-width: 770px) {
+  .infoLeftContainer {
+      width: 100%;
+  }
+}
+
+/* NEWS FEED INFO CSS */
+/* NEWS FEED INFO CSS */
+/* NEWS FEED INFO CSS */
+/* NEWS FEED INFO CSS */
+/* NEWS FEED INFO CSS */
+/* NEWS FEED INFO CSS */
+
+
+
+.left-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.newsfeed-dp {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: 100% -2px;
+  border: 2px solid white;
+  margin-top: -35px;
+}
+
+.newsfeed-username {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.newsfeed-username:hover {
+  text-decoration: underline;
+}
+
+.newsfeed-bio {
+  margin: 0;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 12px;
+}
+
+.connection-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.connection-container:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.connections, .grow-ur-network {
+  font-size: 12px;
+  margin: 0;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-left: 15px;
+}
+
+.connections {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.access-container {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.access-container:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.access-container p {
+  font-size: 12px;
+  margin: 0;
+  align-self: flex-start;
+  margin-left: 15px;
+}
+
+.access-two {
+  font-weight: bold;
+}
+
+.my-items-div {
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  height: 41px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.my-items-div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.my-items-div p {
+  width: 100%;
+  margin-left: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.discover-container {
+  /* position: fixed; */
+  margin-top: 10px;
+  width: 223px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-top: 10px;
+}
+
+.discover-container p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0a66c2;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.discover-container p:hover {
+  text-decoration: underline;
+}
+
+.discover-div {
+  height: 45px;
+  width: 100%;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover-div-fixed {
+  position: fixed;
+  top: 60px;
+}
+
+.discover-div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#discover-more {
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* RIGHT RIGHT RIGHT */
+
+.user-suggestions {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.user-suggestion {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 15px;
+}
+
+.user-sg-icn {
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+  fill: rgba(0, 0, 0, 0.3);
+  min-height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-name-bio-follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.name-sg {
+  margin: 0;
+  font-size: 14px;
+}
+
+.bio-sg {
+  margin:0;
+  margin-top: 3px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+
+}
+
+.follow-btn {
+  margin-top: 7px;
+  width: 98px;
+  height: 32px;
+  border-radius: 1.6rem;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ad-container {
+  margin-top: 10px;
+}
+
+.ad-container-fixed {
+  position: fixed;
+  top: 60px;
+}
+
+.ad-img {
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.site-infos {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.block p {
+  cursor: pointer;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+
+.ad-image {
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 770px) {
+  .connection-container {
+      display: none;
+  }
+
+  .access-container {
+      display: none;
+  }
+
+  .my-items-div {
+      display: none;
+  }
+
+  .newsfeed-bio {
+      border-bottom: none;
+  }
+
+  .discover-container {
+      display: none;
+  }
+}
