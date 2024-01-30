@@ -221,14 +221,12 @@ animation: gradient 2s ease infinite;
   transition: width 0.4s ease-in-out;
 }
 
-.network-active {
+.nav-btn-active .network-active {
   transform: rotateY(3.142rad);
-  fill: black;
 }
 
-.active-notifs {
+.nav-btn-active .active-notifs {
   transform: rotate(15deg);
-  fill: black;
   transition: all 0.1s ease-in-out;
 }
 
