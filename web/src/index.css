@@ -122,6 +122,10 @@ animation: gradient 2s ease infinite;
   position: relative;
 }
 
+.nav-btn-active {
+  color: black;
+}
+
 .nav-btn:hover {
   color: black;
 }

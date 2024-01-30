@@ -13,11 +13,11 @@ import Network from 'src/svgs/Network'
 import Notif from 'src/svgs/Notif'
 
 const MainButtons = () => {
-  const home = true
+  const home = false
   const network = false
   const jobs = false
   const messages = false
-  const notifications = false
+  const notifications = true
 
   return (
     <div className="main-btns">
@@ -34,8 +34,9 @@ const MainButtons = () => {
       </Link>
 
       <Link to={'/network'}>
-        <div className="nav-btn">
-          {network ? <Network fill={'black'} /> : <Network />}
+        <div className={`nav-btn ${network && 'nav-btn-active'}`}>
+          <Network />
+          {/* {network ? <Network fill={'black'} /> : <Network />} */}
           <p>My Network</p>
           <span className={`nav-target-icn ${network && 'nav-active'}`}></span>
         </div>
@@ -59,7 +60,7 @@ const MainButtons = () => {
 
       <Link to={'/notifications'}>
         <div className="nav-btn">
-          {notifications ? <Notif fill={'black'} /> : <Notif />}
+          <Notif fill={notifications && 'black'} />
 
           <p>Notifications</p>
           <span
@@ -80,7 +81,7 @@ const MainButtons = () => {
       <div className="nav-btn">
         <img src={Dots} alt="" className="nav-btn-icn" />
         <p>Work</p>
-        <span className={`nav-target-icn `}></span>
+        <span className={`nav-target-icn`}></span>
       </div>
 
       <div className="prem-txt">
