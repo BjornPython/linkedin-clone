@@ -1,8 +1,7 @@
 import myDp from 'public/images/dp.jpg'
 import Dots from 'public/svgs/dots.svg'
-import hme from 'public/svgs/home.svg'
 
-import { NavLink } from '@redwoodjs/router'
+import { NavLink, routes, useMatch } from '@redwoodjs/router'
 
 import ActiveJobs from 'src/svgs/ActiveJobs'
 import ActiveMessage from 'src/svgs/ActiveMessage'
@@ -13,16 +12,26 @@ import Msg from 'src/svgs/Msg'
 import Network from 'src/svgs/Network'
 import Notif from 'src/svgs/Notif'
 
-const MainButtons = () => {
-  const home = true
-  const jobs = true
-  const messages = true
+const DynamicIcon = ({ to, ActiveIcon, InactiveIcon, fill = null }) => {
+  const matchInfo = useMatch(to)
 
+  return matchInfo.match ? (
+    <ActiveIcon fill={fill} />
+  ) : (
+    <InactiveIcon fill={fill} />
+  )
+}
+
+const MainButtons = () => {
   return (
     <div className="main-btns">
       <NavLink to={'/'} activeClassName="nav-btn-active">
         <div className="nav-btn">
-          {home ? <Home /> : <InactiveHome />}
+          <DynamicIcon
+            to={routes.home()}
+            ActiveIcon={Home}
+            InactiveIcon={InactiveHome}
+          />
           <p>Home</p>
           <span className="nav-target-icn"></span>
         </div>
@@ -40,7 +49,11 @@ const MainButtons = () => {
 
       <NavLink to={'/jobs'} activeClassName="nav-btn-active">
         <div className="nav-btn">
-          {jobs ? <ActiveJobs /> : <Jobs />}
+          <DynamicIcon
+            to={routes.jobs()}
+            ActiveIcon={ActiveJobs}
+            InactiveIcon={Jobs}
+          />
           <p>Jobs</p>
           <span className="nav-target-icn"></span>
         </div>
@@ -48,7 +61,11 @@ const MainButtons = () => {
 
       <NavLink to={'/messages'} activeClassName="nav-btn-active">
         <div className="nav-btn">
-          {messages ? <ActiveMessage /> : <Msg />}
+          <DynamicIcon
+            to={routes.messages()}
+            ActiveIcon={ActiveMessage}
+            InactiveIcon={Msg}
+          />
           <p>Messaging</p>
           <span className="nav-target-icn"></span>
         </div>
