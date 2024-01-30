@@ -5,16 +5,8 @@ import dp from 'public/images/dp.jpg'
 
 import { Link } from '@redwoodjs/router'
 
-const InfoLeft = () => {
-  const [scrollVal, setSCrollVal] = useState(0)
-
+const InfoLeft = ({ scrollVal }) => {
   const [isFixed, setIsFixed] = useState(false)
-
-  useEffect(() => {
-    document.addEventListener('scroll', () => {
-      setSCrollVal(window.scrollY)
-    })
-  }, [])
 
   useEffect(() => {
     if (scrollVal >= 390 && !isFixed) {
