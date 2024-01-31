@@ -577,6 +577,7 @@ animation: gradient 2s ease infinite;
 }
 
 .ad-container-fixed {
+  width: 300px;
   position: fixed;
   top: 60px;
 }
@@ -791,6 +792,7 @@ animation: gradient 2s ease infinite;
   align-items: center;
   padding-bottom: 20px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .addFeed {

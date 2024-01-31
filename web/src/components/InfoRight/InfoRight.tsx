@@ -8,9 +8,9 @@ const InfoRight = ({ scrollVal }) => {
   const [isFixed, setIsFixed] = useState(false)
 
   useEffect(() => {
-    if (scrollVal >= 340 && !isFixed) {
+    if (scrollVal >= 360 && !isFixed) {
       setIsFixed(true)
-    } else if (scrollVal <= 340 && isFixed) {
+    } else if (scrollVal <= 360 && isFixed) {
       setIsFixed(false)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
