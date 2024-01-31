@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import banner from 'public/images/banner.png'
-import dp from 'public/images/dp.jpg'
+import dp from 'public/images/dp.png'
 
 import { Link } from '@redwoodjs/router'
 

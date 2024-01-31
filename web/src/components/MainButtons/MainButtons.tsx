@@ -1,4 +1,4 @@
-import myDp from 'public/images/dp.jpg'
+import myDp from 'public/images/dp.png'
 import Dots from 'public/svgs/dots.svg'
 
 import { NavLink, routes, useMatch } from '@redwoodjs/router'
