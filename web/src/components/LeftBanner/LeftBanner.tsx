@@ -1,3 +1,4 @@
+import LeftAdvertisement from 'src/components/LeftAdvertisement/LeftAdvertisement'
 import Contacts from 'src/svgs/Contacts'
 import Events from 'src/svgs/Events'
 import Following from 'src/svgs/Following'
@@ -59,7 +60,7 @@ const LeftBanner = () => {
         </div>
         <p>Hashtags</p>
       </div>
-      {/* <LeftAd styles={styles} /> */}
+      <LeftAdvertisement />
     </div>
   )
 }
