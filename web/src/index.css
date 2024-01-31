@@ -838,6 +838,7 @@ animation: gradient 2s ease infinite;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 300px;
   min-width: 300px;
   height: auto;
   background-color: white;
@@ -847,7 +848,6 @@ animation: gradient 2s ease infinite;
 }
 
 .leftBanner p {
-  width: 80%;
   margin: 0;
 }
 

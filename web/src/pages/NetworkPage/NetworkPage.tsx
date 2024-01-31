@@ -1,8 +1,10 @@
+import LeftBanner from 'src/components/LeftBanner/LeftBanner'
+
 const NetworkPage = () => {
   return (
     <div className="networkPage">
       <div className="networkContents">
-        {/* <LeftBanner /> */}
+        <LeftBanner />
         {/* <MainContents /> */}
       </div>
     </div>
