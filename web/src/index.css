@@ -991,6 +991,7 @@ animation: gradient 2s ease infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .suggestionDiv:hover {
