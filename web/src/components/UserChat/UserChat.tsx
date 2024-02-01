@@ -1,3 +1,4 @@
+import ChatActions from '../ChatActions/ChatActions'
 import ChatHeader from '../ChatHeader/ChatHeader'
 import ChatMessageInput from '../ChatMessageInput/ChatMessageInput'
 import ChatMessages from '../ChatMessages/ChatMessages'
@@ -8,7 +9,7 @@ const UserChat = () => {
       <ChatHeader />
       <ChatMessages />
       <ChatMessageInput />
-      {/* <ChatActions /> */}
+      <ChatActions />
     </div>
   )
 }
