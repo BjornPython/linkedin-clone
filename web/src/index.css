@@ -1490,6 +1490,10 @@ animation: gradient 2s ease infinite;
   border-radius: 50%;
 }
 
+.emptySaveIcn {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .emptyIcnCter:hover {
   transition: all 0.2s ease-in-out;
   background-color: rgba(0, 0, 0, 0.1);
@@ -1517,8 +1521,9 @@ animation: gradient 2s ease infinite;
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-
+  color: rgba(0, 0, 0, 0.6);
 }
+
 .seenIcnCter:hover {
   transition: all 0.2s ease-in-out;
   background-color: rgba(0, 0, 0, 0.1);
