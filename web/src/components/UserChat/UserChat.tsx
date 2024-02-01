@@ -1,4 +1,5 @@
 import ChatHeader from '../ChatHeader/ChatHeader'
+import ChatMessageInput from '../ChatMessageInput/ChatMessageInput'
 import ChatMessages from '../ChatMessages/ChatMessages'
 
 const UserChat = () => {
@@ -6,8 +7,8 @@ const UserChat = () => {
     <div className="userChatContainer">
       <ChatHeader />
       <ChatMessages />
-      {/* <ChatMessageInput />
-    <ChatActions /> */}
+      <ChatMessageInput />
+      {/* <ChatActions /> */}
     </div>
   )
 }
