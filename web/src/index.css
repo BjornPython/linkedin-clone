@@ -18,6 +18,10 @@ textarea:focus {
   outline: none;
 }
 
+.rootDiv {
+  width: 100%;
+  height: 100vh;
+}
 
 /* LOADING PAGE */
 
@@ -1605,10 +1609,9 @@ animation: gradient 2s ease infinite;
 .messageContent {
   margin-top: 20px;
   width: 75%;
-  height: 680px;
+  height: 100%;
   display: flex;
   justify-content: center;
-  position: absolute;
   bottom: 0;
   column-gap: 25px;
 
@@ -1662,7 +1665,6 @@ animation: gradient 2s ease infinite;
 }
 
 .messageContainer {
-
   display: flex;
   justify-content: flex-start;
   /* position: absolute;
