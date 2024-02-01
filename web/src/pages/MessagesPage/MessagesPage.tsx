@@ -1,9 +1,11 @@
+import Chats from 'src/components/Chats/Chats'
+
 const MessagesPage = () => {
   return (
     <div className="messagePage">
       <div className="messageContent">
         <div className="messageContainer">
-          {/* <Chats  /> */}
+          <Chats />
           {/* <UserChat  /> */}
         </div>
 
