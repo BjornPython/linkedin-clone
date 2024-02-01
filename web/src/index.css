@@ -1336,12 +1336,16 @@ animation: gradient 2s ease infinite;
 }
 
 .rightBanner {
-  width: 300px;
+  width: 310px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.improveRes p {
+  text-wrap: nowrap;
 }
 
 .rightBannerInfo {
@@ -1393,8 +1397,8 @@ animation: gradient 2s ease infinite;
 
 
 .img {
-  width: 80px;
-  height: auto;
+  width: 70px;
+  height: 55px;
   border-radius: 0.8rem;
   margin-left: 5px;
 }
