@@ -1686,6 +1686,8 @@ animation: gradient 2s ease infinite;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-top-right-radius: 0.8rem;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .chatHeader {
@@ -1741,7 +1743,7 @@ animation: gradient 2s ease infinite;
 
 .chatMessages {
   width: 100%;
-  height: 416px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -1750,12 +1752,13 @@ animation: gradient 2s ease infinite;
 .chatMessageInputContainer {
   width: 100%;
   height: 120px;
+  min-height: 130px;
   border-top: 3px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow-y: scroll;
+  overflow-y: auto;
   column-gap: 10px;
 }
 
@@ -1795,6 +1798,7 @@ animation: gradient 2s ease infinite;
 
 .chatActions {
   margin-top: 5px;
+  margin-bottom: 55px;
   width: 100%;
   display: flex;
   justify-content: space-between;
