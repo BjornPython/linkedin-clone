@@ -19,7 +19,7 @@ const Chats = () => {
         </div>
       </div>
       <MessageSearch />
-      <MessageContents height="590px" />
+      <MessageContents height="100%" />
     </div>
   )
 }
