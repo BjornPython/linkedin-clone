@@ -1,6 +1,7 @@
 import Dots from 'src/svgs/Dots'
 import New from 'src/svgs/New'
 
+import MessageContents from '../MessageContents/MessageContents'
 import MessageSearch from '../MessageSearch/MessageSearch'
 
 const Chats = () => {
@@ -18,7 +19,7 @@ const Chats = () => {
         </div>
       </div>
       <MessageSearch />
-      {/* <MessageContents height={'590px'} ENDPOINT={process.env.API_ENDPOINT} /> */}
+      <MessageContents height="590px" />
     </div>
   )
 }

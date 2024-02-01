@@ -3,6 +3,8 @@
 
 import { useState } from 'react'
 
+import Focused from '../Focused/Focused'
+
 const MessageContents = ({ height }) => {
   const [page, setPage] = useState('focused')
   const heightStyle = height ? { height } : {}
@@ -29,8 +31,15 @@ const MessageContents = ({ height }) => {
           <span></span>
         </div>
       </div>
-
-      {/* {page === "focused" && <Focused height={height} ENDPOINT={ENDPOINT} />} */}
+      <div
+        style={{
+          display: `${page !== 'focused' ? 'none' : 'inline'}`,
+          width: '100%',
+          height: '100%',
+        }}
+      >
+        <Focused />
+      </div>
     </div>
   )
 }
