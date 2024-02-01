@@ -1,11 +1,12 @@
 import ChatHeader from '../ChatHeader/ChatHeader'
+import ChatMessages from '../ChatMessages/ChatMessages'
 
 const UserChat = () => {
   return (
     <div className="userChatContainer">
       <ChatHeader />
-      {/*  <ChatMessages />
-    <ChatMessageInput />
+      <ChatMessages />
+      {/* <ChatMessageInput />
     <ChatActions /> */}
     </div>
   )
