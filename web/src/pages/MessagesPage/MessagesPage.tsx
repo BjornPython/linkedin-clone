@@ -1,4 +1,5 @@
 import Chats from 'src/components/Chats/Chats'
+import UserChat from 'src/components/UserChat/UserChat'
 
 const MessagesPage = () => {
   return (
@@ -6,7 +7,7 @@ const MessagesPage = () => {
       <div className="messageContent">
         <div className="messageContainer">
           <Chats />
-          {/* <UserChat  /> */}
+          <UserChat />
         </div>
 
         <div className="messageAd">{/* <MessageAd /> */}</div>
