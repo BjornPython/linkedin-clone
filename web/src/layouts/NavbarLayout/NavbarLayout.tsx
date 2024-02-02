@@ -7,7 +7,7 @@ type NavbarLayoutProps = {
 
 const NavbarLayout = ({ children }: NavbarLayoutProps) => {
   return (
-    <div>
+    <div className="rootDiv">
       <div className="navbar">
         <div className="nav-contents">
           <Search />
