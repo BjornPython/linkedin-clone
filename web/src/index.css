@@ -2358,6 +2358,7 @@ animation: gradient 2s ease infinite;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  row-gap: 20px;
 }
 
 .notifLeftBanner p {
@@ -2365,7 +2366,6 @@ animation: gradient 2s ease infinite;
   font-weight: bold;
   width: 70%;
   color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 15px;
 }
 
 .notifLeftBanner p:nth-child(2) {
@@ -2427,6 +2427,13 @@ margin-bottom: 0;
   .notifsContents {
       flex-direction: column;
       align-items: center;
+      width: 100%;
+
+  }
+
+  .viewSettings {
+    text-align: end;
+    padding-right: 20px;
   }
 
   .notifLeftContainer {
@@ -2436,9 +2443,19 @@ margin-bottom: 0;
   }
 
   .notifsContainer {
+      height: auto;
       width: 576px;
   }
 
+  .notifLeftBanner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+  }
+/*
   .leftBanner {
       position: relative;
       height: 56px;
@@ -2446,7 +2463,7 @@ margin-bottom: 0;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-  }
+  } */
 
   .leftBanner p {
       width: auto;
