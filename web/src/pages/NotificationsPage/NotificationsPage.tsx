@@ -1,3 +1,4 @@
+import Notifications from 'src/components/Notifications/Notifications'
 import NotifLeftBanner from 'src/components/NotifLeftBanner/NotifLeftBanner'
 
 const NotificationsPage = () => {
@@ -5,7 +6,7 @@ const NotificationsPage = () => {
     <div className="notifsPage">
       <div className="notifsContents">
         <NotifLeftBanner />
-        {/* <Notifications notifs={notifs} /> */}
+        <Notifications />
         {/* <RightAd /> */}
       </div>
     </div>
