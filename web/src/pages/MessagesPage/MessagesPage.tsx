@@ -1,4 +1,5 @@
 import Chats from 'src/components/Chats/Chats'
+import MessageAd from 'src/components/MessageAd/MessageAd'
 import UserChat from 'src/components/UserChat/UserChat'
 
 const MessagesPage = () => {
@@ -10,7 +11,9 @@ const MessagesPage = () => {
           <UserChat />
         </div>
 
-        <div className="messageAd">{/* <MessageAd /> */}</div>
+        <div className="messageAd">
+          <MessageAd />
+        </div>
       </div>
     </div>
   )
