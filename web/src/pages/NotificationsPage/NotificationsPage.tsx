@@ -1,21 +1,16 @@
-import { Link, routes } from '@redwoodjs/router'
-import { Metadata } from '@redwoodjs/web'
+import Notifications from 'src/components/Notifications/Notifications'
+import NotifLeftBanner from 'src/components/NotifLeftBanner/NotifLeftBanner'
+import RightAd from 'src/components/RightAd/RightAd'
 
 const NotificationsPage = () => {
   return (
-    <>
-      <Metadata title="Notifications" description="Notifications page" />
-
-      <h1>NotificationsPage</h1>
-      <p>
-        Find me in{' '}
-        <code>./web/src/pages/NotificationsPage/NotificationsPage.tsx</code>
-      </p>
-      <p>
-        My default route is named <code>notifications</code>, link to me with `
-        <Link to={routes.notifications()}>Notifications</Link>`
-      </p>
-    </>
+    <div className="notifsPage">
+      <div className="notifsContents">
+        <NotifLeftBanner />
+        <Notifications />
+        <RightAd />
+      </div>
+    </div>
   )
 }
 
