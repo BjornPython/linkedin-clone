@@ -1,7 +1,7 @@
 const NotifLeftBanner = () => {
   return (
     <div className="leftContainer">
-      <div className="leftBanner">
+      <div className="notifLeftBanner">
         <p>Manage your Notifications</p>
         <p className="viewSettings">View Settings</p>
       </div>

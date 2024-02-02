@@ -9,7 +9,7 @@ import Pages from 'src/svgs/Pages'
 
 const LeftBanner = () => {
   return (
-    <div className={'leftBanner'}>
+    <div className={'networkLeftBanner'}>
       <p className={'mngNetwork'}>Manage my Network</p>
       <div className={'networkInfo'}>
         <div className="icon">
