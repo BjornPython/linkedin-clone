@@ -855,6 +855,11 @@ animation: gradient 2s ease infinite;
   margin: 0;
 }
 
+.viewSettings:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .mngNetwork {
   margin-top: 20px !important;
   margin-bottom: 15px !important;
@@ -2236,4 +2241,228 @@ animation: gradient 2s ease infinite;
   overflow: hidden;
   color: rgba(0, 0, 0, 0.5);
   text-overflow: ellipsis;
+}
+
+/* NOTIFS PAGE CSS */
+/* NOTIFS PAGE CSS */
+/* NOTIFS PAGE CSS */
+/* NOTIFS PAGE CSS */
+/* NOTIFS PAGE CSS */
+/* NOTIFS PAGE CSS */
+
+.notifsPage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifsContents {
+  margin-top: 20px;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 20px;
+}
+
+.notifsContainer {
+  overflow: hidden;
+  width: 555px;
+  height: auto;
+  border-radius: 0.8rem;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.notificationContainer {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 15px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.notificationContainer:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.notifImage {
+  margin-left: 15px;
+  min-width: 56px;
+  min-height: 56px;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.notifInfo {
+  width: 411px;
+}
+
+.notifInfo p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.settingsIcon {
+  transform: scale(1.5);
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.icnContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingsContainer {
+  width: 40px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.settingsContainer p {
+  font-size: 12px;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.leftContainer {
+  min-width: 255px;
+  height: 400px;
+}
+
+.leftBanner {
+  position: fixed;
+  width: 255px;
+  height: 108px;
+  background-color: white;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.leftBanner p {
+  margin-left: 20px;
+  font-weight: bold;
+  width: 70%;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 15px;
+}
+
+.leftBanner p:nth-child(2) {
+color: rgba(10, 102, 194, 0.8);
+font-size: 14px;
+margin-bottom: 0;
+}
+
+.rightContainer {
+  min-width: 300px;
+  height: 600px;
+}
+
+.rightAd {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rightAdImage {
+  border-radius: 0.8rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1300px) {
+  .notifsContents {
+      width: 95%;
+  }
+
+  .notifsContainer {
+      width: 555px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .notifsContents {
+      width: 100%;
+  }
+
+  .notifsContainer {
+      width: 388px;
+  }
+}
+
+@media (max-width:1100px) {
+  .notifsContainer {
+      width: 471px;
+  }
+
+  .rightContainer {
+      display: none;
+  }
+}
+
+@media (max-width:770px) {
+  .notifsContents {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .leftContainer {
+      width: 576px;
+      height: auto;
+      margin-bottom:15px;
+  }
+
+  .notifsContainer {
+      width: 576px;
+  }
+
+  .leftBanner {
+      position: relative;
+      height: 56px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .leftBanner p {
+      width: auto;
+      margin: 0 20px;
+  }
+}
+
+@media (max-width:570px) {
+
+  .leftContainer {
+      width: 95%;
+  }
+
+  .notifsContainer {
+      width: 95%;
+  }
 }
