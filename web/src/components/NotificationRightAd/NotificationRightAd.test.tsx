@@ -1,6 +1,6 @@
 import { render } from '@redwoodjs/testing/web'
 
-import RightAd from './RightAd'
+import RightAd from './NotificationRightAd'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components

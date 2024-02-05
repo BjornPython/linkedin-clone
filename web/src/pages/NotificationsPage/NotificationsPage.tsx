@@ -1,6 +1,6 @@
-import Notifications from 'src/components/Notifications/Notifications'
-import NotifLeftBanner from 'src/components/NotifLeftBanner/NotifLeftBanner'
-import RightAd from 'src/components/RightAd/RightAd'
+import NotificationRightAd from 'src/components/NotificationRightAd/NotificationRightAd'
+import Notifications from 'src/components/Notifications'
+import NotifLeftBanner from 'src/components/NotifLeftBanner'
 
 const NotificationsPage = () => {
   return (
@@ -8,7 +8,7 @@ const NotificationsPage = () => {
       <div className="notifsContents">
         <NotifLeftBanner />
         <Notifications />
-        <RightAd />
+        <NotificationRightAd />
       </div>
     </div>
   )
