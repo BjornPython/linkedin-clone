@@ -2379,7 +2379,7 @@ margin-bottom: 0;
   height: 600px;
 }
 
-.rightAd {
+.notifRightAd {
   position: fixed;
   display: flex;
   flex-direction: column;
