@@ -1,0 +1,21 @@
+steps:
+
+
+# build web image
+- name: 'gcr.io/cloud-builders/docker'
+  id: "web-image"
+  args: ['build', "-f", "Dockerfile.web", '-t', 'gcr.io/${PROJECT_ID}/linkedin-clone', '.']
+  waitFor: ["-"]
+
+
+
+# Deploy web container image to Cloud Run
+# - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#   entrypoint: gcloud
+#   args: ['run', 'deploy', 'lma-web-dev', '--image=gcr.io/${PROJECT_ID}/lma-web', '--region=us-central1']
+#   waitFor: ["web-image"]
+
+images: ['gcr.io/${PROJECT_ID}/linkedin-clone']
+
+
+
