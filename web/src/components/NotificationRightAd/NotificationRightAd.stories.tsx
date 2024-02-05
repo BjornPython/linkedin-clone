@@ -12,7 +12,7 @@
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-import RightAd from './RightAd'
+import RightAd from './NotificationRightAd'
 
 const meta: Meta<typeof RightAd> = {
   component: RightAd,

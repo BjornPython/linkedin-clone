@@ -1,6 +1,6 @@
 import Ad from 'public/images/ad.png'
 
-const RightAd = () => {
+const NotificationRightAd = () => {
   return (
     <div className="rightContainer">
       <div className="rightAd">
@@ -29,4 +29,4 @@ const RightAd = () => {
   )
 }
 
-export default RightAd
+export default NotificationRightAd
