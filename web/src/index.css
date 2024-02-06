@@ -2290,6 +2290,8 @@ animation: gradient 2s ease infinite;
 
 .notificationContainer:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.1s ease-in-out;
+
 }
 
 .notifImage {
@@ -2314,8 +2316,8 @@ animation: gradient 2s ease infinite;
 
 
 .settingsIcon {
-  transform: scale(1.5);
-  fill: rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .icnContainer {
@@ -2325,6 +2327,14 @@ animation: gradient 2s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.icnContainer:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.1s ease-in-out;
 }
 
 .settingsContainer {
@@ -2334,6 +2344,7 @@ animation: gradient 2s ease infinite;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
+  margin-right: 5px;
 }
 
 .settingsContainer p {
