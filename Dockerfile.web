@@ -9,7 +9,7 @@ COPY yarn.lock .
 COPY redwood.toml .
 COPY graphql.config.js .
 COPY .env.defaults .
-COPY .yarn .yarn
+# COPY .yarn .yarn
 COPY .yarnrc.yml .
 
 

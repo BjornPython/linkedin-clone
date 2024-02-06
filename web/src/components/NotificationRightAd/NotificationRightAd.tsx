@@ -3,7 +3,7 @@ import Ad from 'public/images/ad.png'
 const NotificationRightAd = () => {
   return (
     <div className="rightContainer">
-      <div className="rightAd">
+      <div className="notifRightAd" style={{}}>
         <img src={Ad} className="rightAdImage" alt="" />
         <div className="site-infos">
           <div className="block">
