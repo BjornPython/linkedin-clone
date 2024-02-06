@@ -10,10 +10,10 @@ steps:
 
 
 # Deploy web container image to Cloud Run
-# - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-#   entrypoint: gcloud
-#   args: ['run', 'deploy', 'lma-web-dev', '--image=gcr.io/${PROJECT_ID}/lma-web', '--region=us-central1']
-#   waitFor: ["web-image"]
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: ['run', 'deploy', 'linkedin-clone', '--image=gcr.io/${PROJECT_ID}/linkedin-clone', '--region=us-central1']
+  waitFor: ["web-image"]
 
 images: ['gcr.io/${PROJECT_ID}/linkedin-clone']
 
