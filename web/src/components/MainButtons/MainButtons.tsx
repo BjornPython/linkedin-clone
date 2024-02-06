@@ -15,10 +15,14 @@ import Notif from 'src/svgs/Notif'
 const DynamicIcon = ({ to, ActiveIcon, InactiveIcon, fill = null }) => {
   const matchInfo = useMatch(to)
 
-  return matchInfo.match ? (
-    <ActiveIcon fill={fill} />
-  ) : (
-    <InactiveIcon fill={fill} />
+  return (
+    <div style={{ marginBottom: '2x' }}>
+      {matchInfo.match ? (
+        <ActiveIcon fill={fill} />
+      ) : (
+        <InactiveIcon fill={fill} />
+      )}
+    </div>
   )
 }
 
