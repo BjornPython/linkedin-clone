@@ -20,7 +20,7 @@ textarea:focus {
 
 .rootDiv {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* LOADING PAGE */
@@ -273,6 +273,7 @@ animation: gradient 2s ease infinite;
 
 .homepage {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
