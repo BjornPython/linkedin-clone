@@ -4,18 +4,24 @@ steps:
 # build web image
 - name: 'gcr.io/cloud-builders/docker'
   id: "web-image"
-  args: ['build', "-f", "Dockerfile.web", '-t', 'gcr.io/${PROJECT_ID}/linkedin-clone', '.']
+  args: ['build', "-f", "Dockerfile.web", '-t', 'us-central1-docker.pkg.dev/${PROJECT_ID}/linked-ui-clone/web-image', '.']
   waitFor: ["-"]
 
-
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  id: "push-web-image"
+  args: ['push', 'us-central1-docker.pkg.dev/${PROJECT_ID}/linked-ui-clone/web-image']
+  waitFor: ["web-image"]
 
 # Deploy web container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'linkedin-clone', '--image=gcr.io/${PROJECT_ID}/linkedin-clone', '--region=us-central1']
+  args: ['run', 'deploy', 'linkedin-ui-clone-web', '--image=us-central1-docker.pkg.dev/${PROJECT_ID}/linked-ui-clone/web-image', '--region=us-central1']
   waitFor: ["web-image"]
 
-images: ['gcr.io/${PROJECT_ID}/linkedin-clone']
+
+images: ['us-central1-docker.pkg.dev/${PROJECT_ID}/linked-ui-clone/web-image']
+
 
 
 
