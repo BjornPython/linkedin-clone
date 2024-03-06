@@ -1,22 +1,9 @@
-import { useEffect, useState } from 'react'
-
 import banner from 'public/images/banner.png'
 import dp from 'public/images/dp.png'
 
 import { Link } from '@redwoodjs/router'
 
-const InfoLeft = ({ scrollVal }) => {
-  const [isFixed, setIsFixed] = useState(false)
-
-  useEffect(() => {
-    if (scrollVal >= 390 && !isFixed) {
-      setIsFixed(true)
-    } else if (scrollVal <= 390 && isFixed) {
-      setIsFixed(false)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scrollVal])
-
+const InfoLeft = () => {
   return (
     <div className="infoLeftContainer">
       <div className="leftProfileContainer">
@@ -48,7 +35,7 @@ const InfoLeft = ({ scrollVal }) => {
           </div>
         </div>
       </div>
-      <div className={`discover-container ${isFixed && 'discover-div-fixed'}`}>
+      <div className={`discover-container`}>
         <p>Groups</p>
         <p>Events</p>
         <p>Followed Hashtags</p>

@@ -1,21 +1,8 @@
-import { useEffect, useState } from 'react'
-
 import ad from 'public/images/ad.png'
 
 import { userSuggestions } from 'src/lib/data'
 
-const InfoRight = ({ scrollVal }) => {
-  const [isFixed, setIsFixed] = useState(false)
-
-  useEffect(() => {
-    if (scrollVal >= 360 && !isFixed) {
-      setIsFixed(true)
-    } else if (scrollVal <= 360 && isFixed) {
-      setIsFixed(false)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scrollVal])
-
+const InfoRight = () => {
   return (
     <div className="infoRightContainer">
       <div className="addToFeed">
@@ -34,7 +21,7 @@ const InfoRight = ({ scrollVal }) => {
           )
         })}
       </div>
-      <div className={`ad-container ${isFixed && 'ad-container-fixed'}`}>
+      <div className={`ad-container`}>
         <img src={ad} alt="" className="ad-img" />
         <div className="site-infos">
           <div className="block">
